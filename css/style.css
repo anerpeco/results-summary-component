@@ -1,0 +1,241 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: hsla(220, 100%, 96%, 1);
+}
+
+@media screen and (min-width: 46rem) {
+    body {
+        display: flex;
+        height: 100%;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 23.44em;
+    margin: 0 auto;
+    background-color: white;
+}
+
+@media screen and (min-width: 46rem) {
+    main {
+        flex-direction: row;
+        justify-content: center;
+        width: 46em;
+        height: 32em;
+        margin: auto;
+        border-radius: 1em;
+    }
+}
+
+.your_result {
+    width: 100%;
+    background-image: linear-gradient(#6943FF, #2F2CE9);
+    text-align: center;
+    border-radius: 0 0 1em 1em;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 46rem) {
+    .your_result {
+        border-radius: 1em;
+    }
+}
+
+h1 {
+    font-size: 1.12rem;
+    font-weight: 700;
+    color: #cac9ff;
+    margin-top: 1.5em;
+}
+
+@media screen and (min-width: 46rem) {
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 2.375rem;
+    }
+}
+
+.your_result_score {
+    width: 8.75em;
+    height: 8.75em;
+    margin: 1.5em auto 1.5em;
+    background-image: linear-gradient(#4D21C9, #2521C9);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 46rem) {
+    .your_result_score {
+        width: 12.5em;
+        height: 12.5em;
+        margin: 2.188rem auto 1.75rem;
+    }
+}
+
+.your_result_score p {
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+}
+
+@media screen and (min-width: 46rem) {
+    .your_result_score p {
+        font-size: 4.5rem;
+    }
+}
+
+.your_result_score span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsla(241, 100%, 89%, 0.51);
+}
+
+@media screen and (min-width: 46rem) {
+    .your_result_score span {
+        font-size: 1.125rem;
+    }
+}
+
+.your_result_description {
+    max-width: 16.25rem;
+    text-align: center;
+    margin: 0 auto 2.5rem;
+}
+
+@media screen and (min-width: 46rem) {
+    .your_result_description {
+        margin-bottom: 2.875rem;
+    }
+}
+
+.your_result_description p {
+    color: hsla(241, 100%, 89%, 1);
+}
+
+@media screen and (min-width: 46rem) {
+    .your_result_description p {
+        font-size: 1.125rem;
+    }
+}
+
+.your_result_description .desc_cong {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsla(0, 0%, 100%, 1);
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 46rem) {
+
+
+    .your_result_description .desc_cong {
+        font-size: 2rem;
+        margin-bottom: 0.875rem;
+    }
+}
+
+.summary {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.summary h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: hsla(223, 30%, 27%, 1);
+    margin: 1.5em 2em;
+}
+
+@media screen and (min-width: 46rem) {
+    .summary h2 {
+        font-size: 1.5rem;
+        margin: 2.375rem 2.5rem 1.75rem;
+    }
+}
+
+.sum_section {
+    height: 3.5em;
+    margin: 0 1.875em 1em;
+    border: none;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+@media screen and (min-width: 46rem) {
+    .sum_section {
+        margin: 0 2.5rem 1rem;
+        font-size: 1.125rem;
+    }
+}
+
+.sum_section_title {
+    display: flex;
+    gap: 0.75em;
+}
+
+.reaction {
+    background: hsla(0, 100%, 67%, 0.05);
+    color: hsla(0, 100%, 67%, 1);
+}
+
+.memory {
+    background-color: hsla(40, 100%, 56%, 0.05);
+    color: hsla(40, 100%, 56%, 1);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.05);
+    color: hsla(166, 100%, 37%, 1);
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.05);
+    color: hsla(234, 85%, 45%, 1);
+}
+
+.sum_section_score {
+    font-weight: 700;
+    color: hsla(223, 30%, 27%, 1);
+}
+
+.sum_section_score span {
+    opacity: 0.5;
+}
+
+button {
+    display: block;
+    width: calc(100% - 3.75em);
+    height: 3.5em;
+    margin: 0 auto 1.875em;
+    background-color: hsla(223, 30%, 27%, 1);
+    color: white;
+    border: none;
+    border-radius: 2em;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+button:hover {
+    background-image: linear-gradient(hsl(255, 100%, 67%), hsl(241, 81%, 54%));
+    filter: drop-shadow(0px 30px 60px rgba(61, 108, 236, 0.15));
+}
+
+@media screen and (min-width: 46rem) {
+    button {
+        width: calc(100% - 5rem);
+        margin: 0 auto 2.875rem;
+    }
+}
